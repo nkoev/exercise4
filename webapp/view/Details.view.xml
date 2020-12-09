@@ -1,0 +1,16 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="home.kpmg.exercise4.controller.Details"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Details">
+		<List headerText="Details">
+			<InputListItem label="Event">
+				<Input value="{EventName}"/>
+			</InputListItem>
+			<InputListItem label="Location">
+				<Input value="{Location}"/>
+			</InputListItem>
+			<InputListItem label="Date">
+				<Input value="{EventDat}"/>
+			</InputListItem>
+		</List>
+	</Page>
+</mvc:View>

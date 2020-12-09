@@ -1,0 +1,27 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="home.kpmg.exercise4.controller.List"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="app">
+		<pages>
+			<Page id="page" title="{i18n>title}">
+				<content>
+					<Panel headerText="{i18n>tablePanelTitle}" class="sapUiResponsiveMargin" width="auto">
+						<Table id="productsList" class="sapUiResponsiveMargin" width="auto" items="{ path: '/EventsSet' }">
+							<columns>
+								<Column hAlign="End" minScreenWidth="Small" demandPopin="true" width="4em">
+									<Text text="{i18n>columnEvents}"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem type="Navigation" press=".onPress">
+									<cells >
+										<ObjectIdentifier title="{EventName}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
