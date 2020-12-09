@@ -2,12 +2,12 @@
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<App id="app">
 		<pages>
-			<Page id="page" title="{i18n>title}">
+			<Page id="page">
 				<content>
 					<Panel headerText="{i18n>tablePanelTitle}" class="sapUiResponsiveMargin" width="auto">
 						<Table id="productsList" class="sapUiResponsiveMargin" width="auto" items="{ path: '/EventsSet' }">
 							<columns>
-								<Column hAlign="End" minScreenWidth="Small" demandPopin="true" width="4em">
+								<Column hAlign="Center" minScreenWidth="Small" demandPopin="true">
 									<Text text="{i18n>columnEvents}"/>
 								</Column>
 							</columns>
