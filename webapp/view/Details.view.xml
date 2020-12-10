@@ -3,11 +3,13 @@
 	<Page titleAlignment="Center" title="Event Details">
 		<List>
 			<InputListItem label="Event">
-				<Input value="{EventName}"/>
+				<Input id="name" value="{EventName}" enabled="false"/>
 			</InputListItem>
 			<InputListItem label="Location">
-				<Input value="{City}"/>
+				<Input id="location" value="{City}" enabled="false"/>
 			</InputListItem>
 		</List>
+		<Button id="edit" text="Edit" press="onEdit"></Button>
+		<Button id="save" text="Save" press="onSave" visible="false"></Button>
 	</Page>
 </mvc:View>

@@ -17,6 +17,18 @@ sap.ui.define([
 						.eventPath)
 
 				});
+		},
+		onEdit: function () {
+			this.byId("name").setEnabled(true);
+			this.byId("location").setEnabled(true);
+			this.byId("edit").setVisible(false);
+			this.byId("save").setVisible(true);
+		},
+		onSave: function () {
+			this.byId("name").setEnabled(false);
+			this.byId("location").setEnabled(false);
+			this.byId("edit").setVisible(true);
+			this.byId("save").setVisible(false);
 		}
 	});
 });
